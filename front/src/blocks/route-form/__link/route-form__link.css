@@ -1,0 +1,20 @@
+.route-form__link {
+  text-align: center;
+  color: #fff; 
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  position: fixed;
+  bottom: 80px;
+  margin: 0 auto;
+  padding: 0;
+  width: 358px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 530px) {
+  .route-form__link {
+    width: 260px;
+    bottom: 40px;
+  }
+} 

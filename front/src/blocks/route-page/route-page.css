@@ -1,0 +1,12 @@
+.route-page {
+  background-color: black;
+  margin: 60px auto 0;
+  padding: 0;
+  max-height: 100vh;
+}
+
+@media screen and (max-width: 530px) {
+  .route-page {
+    margin-top: 40px;
+  }
+} 

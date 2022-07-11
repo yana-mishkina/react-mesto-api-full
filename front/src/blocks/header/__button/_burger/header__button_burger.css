@@ -1,0 +1,15 @@
+.header__button_burger {
+  display: none;
+}
+
+@media screen and (max-width: 530px) {
+  .header__button_burger {
+    width: 24px;
+    height: 84px;
+    margin: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+}
+

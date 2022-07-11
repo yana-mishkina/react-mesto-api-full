@@ -1,0 +1,11 @@
+.route-form {
+  max-width: 358px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (max-width: 530px) {
+  .route-form {
+    width: 260px;
+  }
+} 
