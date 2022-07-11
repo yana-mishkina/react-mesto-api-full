@@ -11,6 +11,7 @@ const errorsHandler = require('./middlewares/errorsHandler');
 const { url } = require('./regex/regex');
 const NotFoundError = require('./errors/NotFoundError');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
+const allowedCors = require('./middlewares/allowedCors');
 
 const app = express();
 
@@ -23,6 +24,8 @@ mongoose.connect('mongodb://localhost:27017/mestodb', {
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(allowedCors);
 
 app.use(requestLogger);
 
